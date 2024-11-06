@@ -134,16 +134,6 @@ function Customers() {
 
     {
 
-      title: "ที่อยู่",
-
-      dataIndex: "address",
-
-      key: "address",
-
-    },
-
-    {
-
       title: "",
 
       render: (record) => (

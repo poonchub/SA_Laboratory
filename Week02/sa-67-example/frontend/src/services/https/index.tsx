@@ -37,6 +37,19 @@ async function SignIn(data: SignInInterface) {
 }
 
 
+async function GetGender() {
+
+  return await axios
+
+    .get(`${apiUrl}/genders`, requestOptions)
+
+    .then((res) => res)
+
+    .catch((e) => e.response);
+
+}
+
+
 async function GetUsers() {
 
   return await axios
@@ -105,6 +118,8 @@ async function CreateUser(data: UsersInterface) {
 export {
 
   SignIn,
+
+  GetGender,
 
   GetUsers,
 
